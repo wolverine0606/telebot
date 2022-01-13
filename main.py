@@ -34,5 +34,5 @@ def telegram_bot(token):
     bot.polling()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     telegram_bot(token)
