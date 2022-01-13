@@ -8,6 +8,7 @@ from datetime import datetime
 def telegram_bot(token):
     bot = telebot.TeleBot(token)
 
+    #first communication with client
     @bot.message_handler(commands=['start'])
     def start_message(message):
         bot.send_message(message.chat.id, "Hello friend! Write the 'price' to find out the cost of BTC")
